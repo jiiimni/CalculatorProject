@@ -27,6 +27,7 @@ public class App {
                 System.out.println("결과: " + result);
             } catch (IllegalArgumentException e) {
                 System.out.println("오류: " + e.getMessage());
+                continue; // 오류났으면 기준값/삭제/exit 안 묻고 다음 반복으로
             }
 
             // getter
